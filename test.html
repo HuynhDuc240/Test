@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Test Nha</title>
+		<script type="text/javascript">
+			
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function SNT(a)
+			{
+				for(var i=2;i<Math.sqrt(a);i++)
+				{
+					if(a%i==0) return 0;
+				}
+				return 1;
+			} 
+			var a=0;
+			a = prompt("Nhap a: ","0");
+			if(SNT(a)==0) document.write ( a + " Không phải số nguyên tố <br/>");
+			else document.write (a + " Là số nguyên tố<br/>");
+
+		</script>
+		</p>
+	</body>
+</html>

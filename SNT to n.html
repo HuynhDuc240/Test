@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="vi">
+	<title>
+		SNT to n
+	</title>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<script type="text/javascript">
+		function SNT(a)
+		{
+			for( var i=2;i<Math.sqrt(a);i++)
+			{
+				if(a%i==0) return false;
+			}
+			return true;
+		}
+		function print_number()
+		{
+			var number = document.getElementById("so").value;
+			number= parseInt(number);
+			var html='';
+			for(var i=0;i<number;i++)
+			{
+				if(SNT(i)) html+= i + '<br/>'
+			}
+			document.getElementById("result").innerHTML = html;
+		}
+	</script>
+ 	<form method="get" action="">
+ 		Nhập số: <input type="text" id="so" value="0"/>
+ 		<input type="button" value="In Kết Quả" onclick="print_number()"/>
+ 	</form>
+ 	<div id="result"></div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Change Type</title>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<script type="text/javascript">
+		 function ChangeType()
+		 {
+			// body...
+			var change = document.getElementById("Change");
+
+			if (change.type =="text") 
+			{
+				change.type = "button"
+			}
+			else
+			{
+				change.type="text"
+			}
+		}
+	</script>
+	<input type="button" value="Click Me" onclick ="ChangeType()" id="Change"/>
+</body>
+</html>

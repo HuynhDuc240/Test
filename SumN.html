@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sum N</title>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<script type="text/javascript">
+		function Nhap()
+		{
+			var bien = document.getElementById("n");
+			bien = parseInt(bien.value)
+			var result = document.getElementById("result");
+			var sum = 0;
+
+			for(var i=0;i<bien;i++)
+			{
+				var type = prompt("Nhập số: " ,'');
+				if(type != null)
+					sum  += parseFloat(type);
+
+			}
+
+			result.innerHTML = sum;
+		}
+	</script>
+	Tính tổng của: <input type="text" id="n" > số
+	<p><input type="button" id="DK" value="Xong" onclick ="Nhap()"></p>
+	Kết Quả: <div id="result" > 0 </div>
+</body>
+</html>
